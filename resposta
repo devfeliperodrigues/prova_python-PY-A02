@@ -1,0 +1,17 @@
+'''Faça um programa que solicite ao usuário que digite 10 valores para preencher uma lista. 
+Em seguida, o programa deve separar os números pares e ímpares em listas diferentes. 
+Por fim, exiba na tela os números pares, os números ímpares em uma tupla, a quantidade de números pares e ímpares presentes na lista, 
+e a soma de todos os números pares e ímpares, respectivamente.'''
+
+num_par = []
+num_impar = []
+
+for i in range(10):
+    num_usuario = int(input("Digite um número inteiro qualquer: "))
+    if num_usuario % 2 == 0:
+        num_par.append(num_usuario)
+    else:
+        num_impar.append(num_usuario)
+        
+print(f"Os números pares digitados foram: {num_par}, e sua quantidade foi: {len(num_par)}, que somados dão: {sum(num_par)}")
+print(f"Os números ímpares digitados foram: {num_impar}, e sua quantidade foi: {len(num_impar)}, que somados: {sum(num_impar)}")
